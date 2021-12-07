@@ -1,0 +1,42 @@
+.part2 {
+    background: #393E46;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 85%;
+
+        iframe {
+            background: #222831;
+            margin: 20px 0;
+            border: none;
+            border-radius: 21px;
+        }
+    
+        .textos {
+            display: inline-flexbox;
+            align-items: center;
+            justify-content: center;
+
+            h1 {
+                display: block;
+                margin: 0;
+                margin-left: 21px;
+                margin-top: 8px;
+                font-size: 55px;
+                color: #EEEEEE;
+            }
+
+            p {
+                display: block;
+                margin: 0;
+                margin-left: 21px;
+                font-size: 13px;
+                color: #EEEEEE;
+            }
+            button {
+                margin-left: 13px;
+                margin-bottom: 13px;
+            }
+        }
+}

@@ -1,6 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import './global.scss'
+import './normalize.css'
+import './global.css'
+
 import App from './App'
 
 ReactDOM.render(
