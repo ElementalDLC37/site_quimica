@@ -25,22 +25,22 @@ const INITIAL_STATE = {
             title: "1º ANO B",
             lessons: [
                 {
-                    id: 1, 
+                    id: 3, 
                     title: "Lean",
                     link: "https://drive.google.com/file/d/16tQMA68AmTyxx0cPI919bzVKwjVRb5Hw/preview"
                 },
                 { 
-                    id: 2, 
+                    id: 4, 
                     title: "Krokodil",
                     link: "https://drive.google.com/file/d/1VAYEA3SOSBTG8XIw9WVXZmvzhnuDmijL/preview"
                 },
                 { 
-                    id: 3, 
+                    id: 5, 
                     title: "Cafeína",
                     link: "https://drive.google.com/file/d/1WJBiGxcR0ERrPbXSWeQzxtm_xpRD4euQ/preview"
                 },
                 { 
-                    id: 3, 
+                    id: 6, 
                     title: "Taurina",
                     link: "https://drive.google.com/file/d/1en9LF9wnpPi8oKWTnXLO_YmeKd1FE-Vb/preview"
                 }
@@ -51,22 +51,22 @@ const INITIAL_STATE = {
             title: "1º ANO C",
             lessons: [
                 {
-                    id: 1, 
+                    id: 7, 
                     title: "Krokodil",
                     link: "https://drive.google.com/file/d/1HyNm7NH39GIYYBi3l1fT0OKyDpFzFqye/preview"
                 },
                 { 
-                    id: 2, 
+                    id: 8, 
                     title: "THC",
                     link: "https://drive.google.com/file/d/1c80gPq6b5xtpD9bjB0jbbBOXG_1vGzQr/preview"
                 },
                 { 
-                    id: 3, 
+                    id: 9, 
                     title: "Cafeína",
                     link: "https://drive.google.com/file/d/1uANLi32ClyU1AwKQFSACRgS7MfgS9bB4/preview"
                 },
                 {
-                    id: 4, 
+                    id: 10, 
                     title: "Skank",
                     link: "https://drive.google.com/file/d/1Qxwzf4vCgJUOgy8PBf4CTFrmJNR90zaI/preview"
                 }

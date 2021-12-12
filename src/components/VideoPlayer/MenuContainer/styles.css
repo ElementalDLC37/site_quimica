@@ -1,4 +1,4 @@
-.part3 {
+.menuContainer {
     height: 15%;
     background: #222831;
     padding-top: 21px;
@@ -7,45 +7,6 @@
 
 .videoRow {
     margin-bottom: 30px;
-}
-
-.listArea {
-    overflow-x: hidden;
-    padding-left: 34px;
-}
-
-.list {
-    transition: all ease 0.5s;
-    display: flex;
-}
-
-.item {
-    display: inline-block;
-}
-
-button {
-    background: transparent;
-    border: 2px solid #393E46;
-    padding: 8px 21px;
-    font-size: 34px;
-    margin: 0 1px;
-    border-radius: 13px;
-    transform: scale(0.9);
-    transition: all ease 0.2s;
-    cursor: pointer;
-    color: #EEEEEE;
-}
-
-button:hover {
-    background: #393E46;
-}
-
-button:focus {
-    --cor-bg-principal: #FFD369;
-    background: var(--cor-bg-principal);
-    border: 2px solid var(--cor-bg-principal);
-    color: #393E46;
-    letter-spacing: 1px;
 }
 
 select {
@@ -65,8 +26,8 @@ select {
     transition: all ease 0.2s;
 }
 
-select:hover {
-    background: #393E46;
+.listArea {
+    overflow-x: hidden;
 }
 
 .arrowLeft, .arrowRight {
@@ -84,11 +45,6 @@ select:hover {
     transition: all ease 0.2s;
 }
 
-.arrowLeft:hover, .arrowRight:hover {
-    background: #393E46;
-    color: #FFD369;
-}
-
 .arrowLeft {
     left: 0;
     margin-left: 0px;
@@ -100,3 +56,53 @@ select:hover {
     margin-right: 0px;
     border-radius: 34px 0 0 34px;
 }
+
+.list {
+    transition: all ease 0.5s;
+    display: flex;
+}
+
+.item {
+    display: inline-block;
+}
+
+.buttonMenu {
+    background: transparent;
+    border: 2px solid #393E46;
+    padding: 8px 21px;
+    font-size: 34px;
+    margin: 0 1px;
+    border-radius: 13px;
+    transform: scale(0.9);
+    transition: all ease 0.2s;
+    cursor: pointer;
+    color: #EEEEEE;
+}
+
+
+/* Hover */
+
+select:hover {
+    background: #393E46;
+}
+
+.arrowLeft:hover, .arrowRight:hover {
+    background: #393E46;
+    color: #FFD369;
+}
+
+.buttonMenu:hover {
+    background: #393E46;
+}
+
+
+/* Focus */
+
+.buttonMenu:focus {
+    --cor-bg-principal: #FFD369;
+    background: var(--cor-bg-principal);
+    border: 2px solid var(--cor-bg-principal);
+    color: #393E46;
+    letter-spacing: 1px;
+}
+

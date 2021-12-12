@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import styles from './styles.module.scss'
+import './styles.css'
 
 import { connect } from 'react-redux'
 
@@ -30,14 +30,14 @@ const Part2 = ({ activeModule, activeLesson }) => {
   }
 
   return (
-    <div className={styles.part2}>
-      <iframe src={activeLesson.link} width="100%" height="100%" allow="autoplay" style={{width: w, height: h}}></iframe>
-      <div className={styles.textos}>
-        <h1>{activeLesson.title}</h1>
-        <p>{activeModule.title}</p>
-        <button onClick={aumentarTela}>{job}</button>
+      <div className='videoContainer'>
+        <iframe src={activeLesson.link} width="100%" height="100%" allow="autoplay" style={{width: w, height: h}}></iframe>
+        <div className='textos'>
+          <h1>{activeLesson.title}</h1>
+          <p>{activeModule.title}</p>
+          <button className='buttonSizeVideo' onClick={aumentarTela}>{job}</button>
+        </div>
       </div>
-    </div>
   )
 }
 

@@ -1,0 +1,134 @@
+.background {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.background div {
+    position: relative;
+}
+
+.apresentation {
+    background: #222831;
+    font-family: 'Amatic SC', cursive;
+    height: 100vh;
+}
+
+header {
+    background: transparent;
+    position: relative;
+    display: flexbox;
+    padding: 1% 0;
+    padding-bottom: 5%;
+    z-index: 2;
+}
+
+ul {
+    justify-content: flex-end;
+    margin-right: 34px;
+    margin-top: 21px;
+    display: flex;
+}
+
+li {
+    display: flex;
+}
+
+.buttonHeader {
+    border: none;
+    display: flex;
+    background: transparent;
+    padding: 0 13px;
+    font-size: 55px;
+    color: #f8f9ff;
+}
+
+.apresentationSlogan small {
+    font-size: 34px;
+    margin: 0;
+    padding: 0;
+    color: #f8f9ff;
+}
+
+.apresentationSlogan h1 {
+    font-size: 233px;
+    margin: 0;
+    margin-top: -34px;
+    padding: 0;
+    color: #f8f9ff;
+    -webkit-touch-callout: none;  /* iPhone OS, Safari */
+    -webkit-user-select: none;    /* Chrome, Safari 3 */
+    -khtml-user-select: none;     /* Safari 2 */
+    -moz-user-select: none;       /* Firefox */
+    -ms-user-select: none;        /* IE10+ */
+    user-select: none;
+}
+
+.apresentationSlogan h2 {
+    font-size: 89px;
+    margin: 0;
+    margin-top: -13px;
+    padding: 0;
+    color: #f8f9ff;
+    -webkit-touch-callout: none;  /* iPhone OS, Safari */
+    -webkit-user-select: none;    /* Chrome, Safari 3 */
+    -khtml-user-select: none;     /* Safari 2 */
+    -moz-user-select: none;       /* Firefox */
+    -ms-user-select: none;        /* IE10+ */
+    user-select: none;
+}
+
+.apresentationSlogan {
+    display: inline-block;
+    position: relative;
+    margin-left: 55px;
+    margin-top: 34px;
+    z-index: 1;
+    -webkit-touch-callout: none;  /* iPhone OS, Safari */
+    -webkit-user-select: none;    /* Chrome, Safari 3 */
+    -khtml-user-select: none;     /* Safari 2 */
+    -moz-user-select: none;       /* Firefox */
+    -ms-user-select: none;        /* IE10+ */
+    user-select: none;
+}
+
+
+/* Hover */
+
+.buttonHeader:hover {
+    text-decoration: underline;
+}
+
+
+/* Media Queries */
+
+@media (max-width: 760px) {
+    .apresentation {
+        display: flex;
+        align-items: center;
+    }
+
+    header {
+        display: none;
+    }
+
+    .apresentationSlogan {
+        margin: 0 auto;
+    }
+
+    .apresentationSlogan h1 {
+        font-size: 144px;
+        margin-top: -13px;
+    }
+
+    .apresentationSlogan h2 {
+        font-size: 34px;
+        margin-top: -5px;
+    }
+
+    .apresentationSlogan small {
+        font-size: 21px;
+    }
+}
