@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import { motion } from 'framer-motion'
   
   function Background() {
     const imgs = ["src/img/coffe.jpg", "src/img/canabbis.jpg"]
@@ -10,14 +9,14 @@ import { motion } from 'framer-motion'
     useEffect(() => {
       setTimeout(() => {
         if(imgT === 0) {
-          setO("60%")
+          setO("50%")
           setImgT(1)
           setL("0")
           setTimeout(() => {
             setO("0")
           }, 8000)
         } else {
-          setO("60%")
+          setO("50%")
           setImgT(0)
           setL("-50%")
           setTimeout(() => {
@@ -28,7 +27,7 @@ import { motion } from 'framer-motion'
     }, [imgT]);
 
     return (
-      <div className="background" style={{ background: "black", width: "100%", height: "100%", overflow: "hidden"}}>
+      <div className="background" style={{ background: "#222831", width: "100%", height: "100%", overflow: "hidden"}}>
         <div
         style={{ 
           position: "relative", 
@@ -44,7 +43,7 @@ import { motion } from 'framer-motion'
             style={{ 
               position: "relative", 
               minWidth: "100%", 
-              minHeight: "100%", 
+              minHeight: "100vh", 
               overflow: "hidden", 
               opacity: o, 
               transition: "all ease 5s"

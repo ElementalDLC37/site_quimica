@@ -1,41 +1,20 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './styles.css'
-
 import { connect } from 'react-redux'
+import MenuContainer from '../MenuContainer'
 
 const Part2 = ({ activeModule, activeLesson }) => {
-
-  const [w, setW] = useState(610)
-  const [h, setH] = useState(377)
-  const [job, setJob] = useState("Aumentar")
-
-  function aumentarTela() {
-    let dimensionH = h
-    let dimensionW = w
-
-    if(job === "Diminuir") {
-        dimensionH = 377
-        dimensionW = 610
-        setJob("Aumentar")
-    }
-
-    if(job === "Aumentar") {
-      dimensionH = window.innerHeight
-      dimensionW = window.innerWidth
-      setJob("Diminuir")
-    }
-
-    setH(dimensionH)
-    setW(dimensionW)
-  }
-
   return (
       <div className='videoContainer'>
-        <iframe src={activeLesson.link} width="100%" height="100%" allow="autoplay" style={{width: w, height: h}}></iframe>
-        <div className='textos'>
-          <h1>{activeLesson.title}</h1>
-          <p>{activeModule.title}</p>
-          <button className='buttonSizeVideo' onClick={aumentarTela}>{job}</button>
+        <iframe src={activeLesson.link} allow="autoplay" allowFullScreen></iframe>
+        <div className="textomenu">
+          <div className='textos'>
+            <h1>{activeLesson.title}</h1>
+            <p>{activeModule.title}</p>
+          </div>
+          <div className="menu">
+            <MenuContainer />
+          </div>
         </div>
       </div>
   )

@@ -8,7 +8,6 @@ const VideoPlayer = () => {
   return (
     <div className='videoPlayer'>
         <VideoContainer />
-        <MenuContainer />
     </div>
   )
 }

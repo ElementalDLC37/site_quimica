@@ -17,18 +17,19 @@
 }
 
 header {
-    background: transparent;
-    position: relative;
+    background: #222831;
+    position: fixed;
     display: flexbox;
     padding: 1% 0;
-    padding-bottom: 5%;
-    z-index: 2;
+    z-index: 10;
+    width: 100%;
 }
 
 ul {
     justify-content: flex-end;
-    margin-right: 34px;
-    margin-top: 21px;
+    margin-right: 55px;
+    margin-top: 8px;
+    margin-bottom: 8px;
     display: flex;
 }
 
@@ -41,15 +42,15 @@ li {
     display: flex;
     background: transparent;
     padding: 0 13px;
-    font-size: 55px;
-    color: #f8f9ff;
+    font-size: 34px;
+    color: #FCF1F1;
 }
 
 .apresentationSlogan small {
     font-size: 34px;
     margin: 0;
     padding: 0;
-    color: #f8f9ff;
+    color: #FCF1F1;
 }
 
 .apresentationSlogan h1 {
@@ -57,13 +58,7 @@ li {
     margin: 0;
     margin-top: -34px;
     padding: 0;
-    color: #f8f9ff;
-    -webkit-touch-callout: none;  /* iPhone OS, Safari */
-    -webkit-user-select: none;    /* Chrome, Safari 3 */
-    -khtml-user-select: none;     /* Safari 2 */
-    -moz-user-select: none;       /* Firefox */
-    -ms-user-select: none;        /* IE10+ */
-    user-select: none;
+    color: #FCF1F1;
 }
 
 .apresentationSlogan h2 {
@@ -71,27 +66,15 @@ li {
     margin: 0;
     margin-top: -13px;
     padding: 0;
-    color: #f8f9ff;
-    -webkit-touch-callout: none;  /* iPhone OS, Safari */
-    -webkit-user-select: none;    /* Chrome, Safari 3 */
-    -khtml-user-select: none;     /* Safari 2 */
-    -moz-user-select: none;       /* Firefox */
-    -ms-user-select: none;        /* IE10+ */
-    user-select: none;
+    color: #FCF1F1;
 }
 
 .apresentationSlogan {
     display: inline-block;
     position: relative;
     margin-left: 55px;
-    margin-top: 34px;
+    margin-top: 13em;
     z-index: 1;
-    -webkit-touch-callout: none;  /* iPhone OS, Safari */
-    -webkit-user-select: none;    /* Chrome, Safari 3 */
-    -khtml-user-select: none;     /* Safari 2 */
-    -moz-user-select: none;       /* Firefox */
-    -ms-user-select: none;        /* IE10+ */
-    user-select: none;
 }
 
 

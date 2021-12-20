@@ -1,108 +1,113 @@
 .menuContainer {
-    height: 15%;
-    background: #222831;
-    padding-top: 21px;
-    padding-bottom: 8px;
-}
-
-.videoRow {
-    margin-bottom: 30px;
-}
-
-select {
-    margin-left: 34px;
-    margin-bottom: 13px;
     width: 100%;
-    min-width: 13ch;
-    max-width: 13ch;
-    border: 1px solid #FFD369;
-    border-radius: 0.25em;
-    padding: 0.25em 0.5em;
-    font-size: 1.25rem;
-    cursor: pointer;
-    line-height: 1.1;
-    background: transparent;
-    color: #EEEEEE;
-    transition: all ease 0.2s;
 }
 
-.listArea {
-    overflow-x: hidden;
-}
-
-.arrowLeft, .arrowRight {
-    position: absolute;
-    width: 34px;
-    height: 55px;
-    margin-top: 1px;
-    background: #EEEEEE;
-    z-index: 5;
+.toggleButton {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    background: #00000069;
+    width: 45vw;
+    border-radius: 3px 3px 20px 3px;
+    margin-bottom: 13px;
+    padding: 13px;
+}
+
+.toggleButton p {
+    font-weight: bold;
+    color: #FCF1F1;
+    margin-right: 13px;
+}
+
+.toggleButton button {
+    background: #393e469a;
+    color: #FCF1F1;
+    border: 0;
+    padding: 0 21px;
     cursor: pointer;
-    color: #222831;
-    transition: all ease 0.2s;
+    transition: all ease 0.3s;
 }
 
-.arrowLeft {
-    left: 0;
-    margin-left: 0px;
-    border-radius: 0 34px 34px 0;
+.toggleButton button:hover {
+    background: #393e46bb;
 }
 
-.arrowRight {
-    right: 0;
-    margin-right: 0px;
-    border-radius: 34px 0 0 34px;
+.toggleButton button:focus {
+    background: #393e46;
+}
+
+#a {
+    border-radius: 21px 0px 0px 0px;
+}
+
+#c {
+    border-radius: 0px 0px 21px 0px;
 }
 
 .list {
-    transition: all ease 0.5s;
     display: flex;
+    flex-wrap: wrap;
+    background: #00000050;
+    padding: 1vh;
+    width: 45vw;
+    height: calc(.5625 * 21vw);
+    max-height: 15vh;
+}
+
+.listArea {
+    display: flex;
+    flex-wrap: wrap;
+    width: 45vw;
+    height: calc(.5625 * 21vw);
+    max-height: 15vh;
 }
 
 .item {
-    display: inline-block;
+    margin: 0 2px;
+    padding: 0.5%;
 }
 
-.buttonMenu {
-    background: transparent;
-    border: 2px solid #393E46;
-    padding: 8px 21px;
-    font-size: 34px;
-    margin: 0 1px;
-    border-radius: 13px;
-    transform: scale(0.9);
-    transition: all ease 0.2s;
-    cursor: pointer;
-    color: #EEEEEE;
+.item button {
+    width: 144px;
+    padding: 3px;
+    background: #16A596;
+    border: none;
+    border-radius: 3px;
+    font-size: 21px;
 }
 
+@media (max-width: 760px) {
 
-/* Hover */
+    .toggleButton {
+        width: 95vw;
+        padding-left: 13%;
+    }
 
-select:hover {
-    background: #393E46;
+    .list {
+        position: relative;
+        width: 100vw;
+        margin-top: 8%;
+        justify-content: center;
+        height: 50vh;
+        max-height: 34vh;
+    }
+
+    .listArea {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        width: 100vw;
+    }
+
+    .item {
+        width: 44%;
+        padding: 0.5%;
+    }
+
+    .item button {
+        border: none;
+        font-size: 21px;
+        width: 100%;
+        margin: 2% 0;
+        padding: 8% 0;
+    }
 }
-
-.arrowLeft:hover, .arrowRight:hover {
-    background: #393E46;
-    color: #FFD369;
-}
-
-.buttonMenu:hover {
-    background: #393E46;
-}
-
-
-/* Focus */
-
-.buttonMenu:focus {
-    --cor-bg-principal: #FFD369;
-    background: var(--cor-bg-principal);
-    border: 2px solid var(--cor-bg-principal);
-    color: #393E46;
-    letter-spacing: 1px;
-}
-
