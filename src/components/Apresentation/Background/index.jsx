@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
   
   function Background() {
-    const imgs = ["src/img/coffe.jpg", "src/img/canabbis.jpg"]
+    const imgs = ["https://images.pexels.com/photos/3742854/pexels-photo-3742854.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940", "src/img/canabbis.jpg"]
     const [imgT, setImgT] = useState(0)
     const [l, setL] = useState("-50%")
     const [o, setO] = useState("0")
