@@ -6,13 +6,13 @@ import MenuContainer from '../MenuContainer'
 const Part2 = ({ activeModule, activeLesson }) => {
   return (
       <div className='videoContainer'>
-        <iframe src={activeLesson.link} allow="autoplay" allowFullScreen></iframe>
-        <div className="textomenu">
+        <iframe src={activeLesson.link} allow='autoplay'  allowFullScreen></iframe>
+        <div className='textomenu'>
           <div className='textos'>
             <h1>{activeLesson.title}</h1>
             <p>{activeModule.title}</p>
           </div>
-          <div className="menu">
+          <div className='menu'>
             <MenuContainer />
           </div>
         </div>
