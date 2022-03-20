@@ -23,7 +23,7 @@ import React, { useState, useEffect } from 'react'
             setO("0")
           }, 8000)
         }
-      }, 13000);
+      }, 8000);
     }, [imgT]);
 
     return (
