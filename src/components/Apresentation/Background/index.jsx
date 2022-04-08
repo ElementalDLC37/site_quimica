@@ -1,29 +1,49 @@
 import React, { useState, useEffect } from 'react'
   
   function Background() {
+
     const imgs = ["https://images.pexels.com/photos/3742854/pexels-photo-3742854.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940", "https://images.pexels.com/photos/4058233/pexels-photo-4058233.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"]
     const [imgT, setImgT] = useState(0)
     const [l, setL] = useState("-50%")
     const [o, setO] = useState("0")
+    const [t, setT] = useState(8000)
+    const [tZao, setTZao] = useState(13000)
+    const [tranL, setTranL] = useState("39s")
+    const [tran, setTran] = useState("all ease 5s")
+
+    console.log(window.onfocus)
+
+    window.onfocus = () => {
+      console.log("focus")
+      console.log(window.onfocus)
+      console.log(window.onblur)
+    }
+
+    window.onblur = () => {
+      console.log("blur")
+      console.log(window.onfocus)
+      console.log(window.onblur)
+    }
 
     useEffect(() => {
       setTimeout(() => {
+        
         if(imgT === 0) {
-          setO("50%")
           setImgT(1)
           setL("0")
+          setO("50%")
           setTimeout(() => {
             setO("0")
-          }, 8000)
+          }, t)
         } else {
-          setO("50%")
           setImgT(0)
           setL("-50%")
+          setO("50%")
           setTimeout(() => {
             setO("0")
-          }, 8000)
+          }, t)
         }
-      }, 8000);
+      }, tZao);
     }, [imgT]);
 
     return (
@@ -35,7 +55,7 @@ import React, { useState, useEffect } from 'react'
           minHeight: "100%", 
           overflow: "hidden",
           left: l,  
-          transition: "39s"
+          transition: tranL
         }}
         >
           <img
@@ -46,7 +66,7 @@ import React, { useState, useEffect } from 'react'
               minHeight: "100vh", 
               overflow: "hidden", 
               opacity: o, 
-              transition: "all ease 5s"
+              transition: tran
             }}
           />
         </div>

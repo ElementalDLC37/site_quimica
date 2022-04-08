@@ -17,7 +17,7 @@
 }
 
 header {
-    background: #222831;
+    background: transparent;
     position: fixed;
     display: flexbox;
     padding: 1% 0;
